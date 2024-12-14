@@ -2,6 +2,13 @@ body{
     font-family: 'Courier New', Courier, monospace;
     background: #7F8C51;
 }
+.title{
+    text-align: center;
+    align-items: center;
+}
+.title div{
+    font-size: 50px;
+}
 .topNav{
     background-color: antiquewhite;
     font-size: 35px;
@@ -28,3 +35,4 @@ body{
 .topNav a:hover{
     background-color: aquamarine;
 }
+
