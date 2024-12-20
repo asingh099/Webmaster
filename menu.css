@@ -1,38 +1,41 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #7F8C51;
-}
-.title{
-    text-align: center;
-    align-items: center;
-}
-.title div{
-    font-size: 50px;
+    margin: 0;
+    padding: 0;
 }
 .topNav{
-    background-color: antiquewhite;
     font-size: 35px;
     text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
+    display: block;
+    float: right;
+    margin-top: 35px;
+}
+.container{
+    background-color: white;
+    margin: 0px;
 }
 .topNav a{
-    display: flex;
     text-decoration: none;
     color: black;
-    text-align: center;
-    font-size: 20px;
-    align-items: center;
-    padding-inline: 80px;
-    padding-block: 40px;
+    margin-block: 200px;
+}
+.container img{
+    padding-left: 0px;
+    padding-top: 10px;
 }
 .topNav a.active{
-    background-color: #8cde3a;
-    border-left: 200px;
-    border-color: #a52a2a;
+    color: #8cde3a;
 }
-.topNav a:hover{
-    background-color: aquamarine;
+.topNav a.inactive:hover{
+    animation: highlight 0.5s;
+    color: #D9A13B;
+}
+@keyframes highlight {
+    from{color: black;}
+    to{color: #D9A13B;}
+}
+#menu{
+    text-align: center;
 }
 
